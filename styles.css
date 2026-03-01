@@ -4,7 +4,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
     color: white;
 
-    background-image: url("/space2.jpg");
+    background-image: url("./images/space2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -90,7 +90,7 @@ h1:hover{
 
 .content-page {
     margin-left: 0px;
-    background-image:url("/ss1.webp");
+    background-image:url("./images/ss1.webp");
     background-size: contain;
     background-position: top center;
     background-repeat: repeat-y;
@@ -138,3 +138,108 @@ h1:hover{
     text-decoration: none;
 }
 
+
+.logo_mo {
+    text-align: center;
+    font-size: 36px;
+    color: #ffffff;
+    margin-top: 20px;
+    text-shadow: 0 0 10px #00cfff;
+}
+
+.logo_mo:hover {
+    color: #00cfff;
+}
+
+.Orion img{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.Pulsar img{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.Quasar img{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.StarCluster img{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.GalaxyCluster img{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.IntergalacticMedium img{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.CosmicFilaments img{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.Superclusters img{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.cosmos-container
+{
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-image: url("./images/n3.jpg");
+    background-position: top center;
+    background-repeat: repeat-y;
+    background-size: contain;
+    margin-top: 0;
+    min-height: 100vh;
+    text-align: center;
+}
+
+
+.cosmos-card
+{
+
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.2);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    color: white;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.cosmos-card:hover
+{
+    transform: scale(1.005);
+    color: black;
+}

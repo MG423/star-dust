@@ -570,3 +570,14 @@ function showPlanetInfo(planet)
 
     document.getElementById("planet-info").innerHTML = info;
 }
+
+
+function openMOTOC()
+{
+    window.location.href = "motoc.html";
+}
+
+function goHome()
+{
+    window.location.href = "index.html";
+}
