@@ -4,7 +4,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
     color: white;
 
-    background-image: url("./images/space2.jpg");
+    background-image: url("./space2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -90,7 +90,7 @@ h1:hover{
 
 .content-page {
     margin-left: 0px;
-    background-image:url("./images/ss1.webp");
+    background-image:url("./ss1.webp");
     background-size: contain;
     background-position: top center;
     background-repeat: repeat-y;
@@ -242,4 +242,5 @@ h1:hover{
 {
     transform: scale(1.005);
     color: black;
+
 }
