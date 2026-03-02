@@ -212,7 +212,7 @@ h1:hover{
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-image: url("./images/n3.jpg");
+    background-image: url("n3.jpg");
     background-position: top center;
     background-repeat: repeat-y;
     background-size: contain;
@@ -244,3 +244,4 @@ h1:hover{
     color: black;
 
 }
+
