@@ -9,6 +9,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
+    animation: fade-in 1s ease-out;
 }
 
 h1:hover{
@@ -96,6 +97,7 @@ h1:hover{
     background-repeat: repeat-y;
     padding: 40px;
     min-height: 400vh;
+    animation: fade-in 1s ease-out;
 }
 
 .logo_s {
@@ -114,6 +116,7 @@ h1:hover{
 }
 
 .planet {
+    animation: slide-in 0.7s ease-out;
     background: rgba(0,0,0,0.6);
     padding: 10px;
     margin: 8px;
@@ -127,6 +130,7 @@ h1:hover{
 }
 
 #planet-info {
+    animation: fade-in 1s ease-out;
     margin-top: 0px;
     text-align: center;
     height: 100px;
@@ -145,6 +149,7 @@ h1:hover{
     color: #ffffff;
     margin-top: 20px;
     text-shadow: 0 0 10px #00cfff;
+    animation: slide-in 0.7s ease-out;
 }
 
 .logo_mo:hover {
@@ -219,12 +224,13 @@ h1:hover{
     margin-top: 0;
     min-height: 100vh;
     text-align: center;
+    animation: fade-in 1s ease-out;
 }
 
 
 .cosmos-card
 {
-
+    animation: slide-in 0.7s ease-out;
     background: rgba(255,255,255,0.08);
     border: 1px solid rgba(255,255,255,0.2);
     margin-left: auto;
@@ -256,12 +262,14 @@ h1:hover{
 {
     margin: 0;
     font-size: 34px;
+    animation: slide-in 0.7s ease-out;
 }
 
 #exoContainer
 {
     background: linear-gradient(to bottom, #020111, #000000);
     padding: 50px 0;
+    animation: fade-in 1s ease-out;
 }
 
 .exo-section
@@ -316,5 +324,26 @@ h1:hover{
 .exo-image img:hover
 {
     transform: scale(1.05);
+}
+
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 
 }
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
