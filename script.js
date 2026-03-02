@@ -701,3 +701,337 @@ function loadExoplanetContent()
     `;
 
 }
+
+
+let currentQuestion = 0;
+let score = 0;
+
+const quizQuestions = [
+
+    {
+        question: "Which method is commonly used to detect exoplanets?",
+        options: ["Seismic Detection", "Transit Method", "Thermal Imaging", "Laser Reflection"],
+        answer: 1
+    },
+    {
+        question: "Which planet has the shortest day in the Solar System?",
+        options: ["Earth", "Mars", "Jupiter", "Neptune"],
+        answer: 2
+    },
+    {
+        question: "What is the habitable zone primarily based on?",
+        options: ["Planet Size", "Distance from Star", "Gravity Strength", "Magnetic Field"],
+        answer: 1
+    },
+    {
+        question: "Which object emits regular pulses of radiation?",
+        options: ["Nebula", "Galaxy Cluster", "Pulsar", "Comet"],
+        answer: 2
+    },
+    {
+        question: "Which gas gives Uranus and Neptune their blue color?",
+        options: ["Oxygen", "Hydrogen", "Methane", "Nitrogen"],
+        answer: 2
+    },
+    {
+        question: "What is the largest planet in our Solar System?",
+        options: ["Jupiter", "Neptune", "Saturn", "Earth"],
+        answer: 0
+    },
+    {
+        question: "How long does Earth take to orbit the Sun?",
+        options: ["24 hours", "30 days", "365 days", "687 days"],
+        answer: 2
+    },
+    {
+        question: "Which planet is known as the Red Planet?",
+        options: ["Venus", "Mars", "Mercury", "Jupiter"],
+        answer: 1
+    },
+    {
+        question: "Which planet has the most visible ring system?",
+        options: ["Mars", "Pluto", "Jupiter", "Saturn"],
+        answer: 3
+    },
+    {
+        question: "What type of planet is Jupiter?",
+        options: ["Rocky Planet", "Ice Giant", "Gas Giant", "Dwarf Planet"],
+        answer: 2
+    },
+    {
+        question: "Which star is at the center of our Solar System?",
+        options: ["Polaris", "Betelgeuse", "The Sun", "Sirius"],
+        answer: 2
+    },
+    {
+        question: "Which planet rotates on its side?",
+        options: ["Mars", "Mercury", "Venus", "Uranus"],
+        answer: 3
+    },
+    {
+        question: "What is a nebula primarily made of?",
+        options: ["Solid rock", "Gas and dust", "Metal fragments", "Ice only"],
+        answer: 1
+    },
+    {
+        question: "Which planet is closest to the Sun?",
+        options: ["Mercury", "Venus", "Earth", "Mars"],
+        answer: 0
+    },
+    {
+        question: "What is the name of our galaxy?",
+        options: ["Andromeda", "Milky Way", "Sombrero", "Whirlpool"],
+        answer: 1
+    },
+    {
+        question: "With which US spacecraft did humans first land on the Moon?",
+        options: ["Apollo 14", "Gemini 4", "Apollo 11", "Skylab 2"],
+        answer: 2
+    },
+    {
+        question: "Which planet has the longest year?",
+        options: ["Saturn", "Uranus", "Neptune", "Jupiter"],
+        answer: 2
+    },
+    {
+        question: "What is a supernova?",
+        options: ["A new planet forming", "A dying star explosion", "A comet impact", "A black hole forming"],
+        answer: 1
+    },
+    {
+        question: "Which force keeps planets in orbit around the Sun?",
+        options: ["Gravity", "Magnetism", "Friction", "Radiation"],
+        answer: 0
+    },
+    {
+        question: "What is the approximate surface temperature of Venus?",
+        options: ["1000°C", "460°C", "50°C", "-50°C"],
+        answer: 1
+    },
+    {
+        question: "Which planet has the strongest winds?",
+        options: ["Mars", "Jupiter", "Neptune", "Earth"],
+        answer: 2
+    },
+    {
+        question: "What is the term for a day on Mars?",
+        options: ["Lunar", "Phase", "Orbit", "Sol"],
+        answer: 3
+    },
+    {
+        question: "Which term describes the alignment of three celestial bodies?",
+        options: ["Eclipse", "Syzygy", "Equinox", "Transit"],
+        answer: 1
+    },
+    {
+        question: "Which type of cluster contains thousands of old stars?",
+        options: ["Open Cluster", "Globular Cluster", "Galaxy Cluster", "Nebula Cluster"],
+        answer: 1
+    },
+    {
+        question: "Which planet has the hottest average surface temperature?",
+        options: ["Venus", "Mercury", "Mars", "Earth"],
+        answer: 0
+    },
+    {
+        question: "What is the name of Saturn’s largest moon?",
+        options: ["Europa", "Titan", "Ganymede", "Triton"],
+        answer: 1
+    },
+    {
+        question: "Which planet has two small moons called Phobos and Deimos?",
+        options: ["Earth", "Jupiter", "Mars", "Venus"],
+        answer: 2
+    },
+        
+{
+    question: "What is the boundary around a black hole beyond which nothing can escape called?",
+    options: ["Singularity", "Event Horizon", "Photon Belt", "Accretion Line"],
+    answer: 1
+},
+{
+    question: "What forms when a massive star collapses after a supernova?",
+    options: ["Nebula", "White Dwarf", "Black Hole", "Asteroid Belt"],
+    answer: 2
+},
+{
+    question: "Pulsars are a type of:",
+    options: ["Galaxy", "Neutron Star", "Comet Core", "Red Giant"],
+    answer: 1
+},
+{
+    question: "Why do pulsars appear to pulse?",
+    options: ["They expand and shrink", "They reflect sunlight", "Their radiation beams sweep across Earth", "They explode repeatedly"],
+    answer: 2
+},
+{
+    question: "The Orion Nebula is an example of what type of nebula?",
+    options: ["Planetary Nebula", "Emission Nebula", "Dark Nebula", "Reflection Nebula"],
+    answer: 1
+},
+{
+    question: "What is the name of the supermassive black hole at the center of our galaxy?",
+    options: ["M87*", "Sagittarius A*", "Cygnus X-1", "Andromeda A*"],
+    answer: 1
+},
+{
+    question: "Which space telescope discovered thousands of exoplanet candidates?",
+    options: ["Hubble", "James Webb", "Kepler", "Voyager 1"],
+    answer: 2
+},
+{
+    question: "What is the name of the outermost region of the Sun?",
+    options: ["Corona", "Chromosphere", "Photosphere", "Core"],
+    answer: 0
+},
+{
+    question: "What is the main difference between an asteroid and a comet?",
+    options: ["Asteroids have tails", "Comets are mostly ice and dust", "Asteroids orbit other planets", "Comets are made of metal only"],
+    answer: 1
+},
+{
+    question: "Where is the majority of asteroids located in our Solar System?",
+    options: ["Kuiper Belt", "Between Earth and Mars", "Asteroid Belt between Mars and Jupiter", "Near Neptune"],
+    answer: 2
+},
+{
+    question: "What causes a comet’s tail to form?",
+    options: ["Gravity", "Solar wind and radiation", "Magnetic fields", "Asteroid collisions"],
+    answer: 1
+},
+{
+    question: "What is found at the center of most large galaxies?",
+    options: ["A pulsar", "A massive nebula", "A star cluster", "A supermassive black hole"],
+    answer: 3
+},
+{
+    question: "On what planet is the Great Red Spot located?",
+    options: ["Saturn", "Jupiter", "Neptune", "Uranus"],
+    answer: 1
+},
+{
+    question: "Which mission provided the first close-up images of Pluto?",
+    options: ["Voyager 2", "Cassini", "New Horizons", "Galileo"],
+    answer: 2
+},
+{
+    question: "Which telescope is designed to study the early universe and exoplanet atmospheres?",
+    options: ["Kepler", "Hubble", "James Webb Space Telescope", "Chandra"],
+    answer: 2
+},
+{
+    question: "What is the name of the largest known black hole in the observable universe?",
+    options: ["IC 1101", "Sagittarius A*", "Cygnus X-1", "Messier 87"],
+    answer: 0
+},
+{
+    question: "A planetary nebula is formed when:",
+    options: ["Two galaxies collide", "A small star sheds its outer layers", "A comet explodes", "An asteroid melts"],
+    answer: 1
+},
+{
+    question: "When did the International Astronomical Union officially reclassify Pluto as a dwarf planet?",
+    options: ["1990", "2006", "2015", "2020"],
+    answer: 1
+},
+{
+    question: "What keeps material swirling around a black hole in a disk shape?",
+    options: ["Magnetism", "Solar radiation", "Angular momentum and gravity", "Dark energy"],
+    answer: 2
+},
+{
+    question: "Which was the first spacecraft to have a hard landing on the Moon?",
+    options: ["Luna 2", "Apollo 11", "Venera 7", "Mars Pathfinder"],
+    answer: 0
+},
+{
+    question: "Which region beyond Neptune contains many icy bodies and dwarf planets?",
+    options: ["Asteroid Belt", "Kuiper Belt", "Oort Cloud", "Van Allen Belt"],
+    answer: 1
+},
+{
+    question: "What is the name of the largest known star in the observable universe?",
+    options: ["UY Scuti", "Betelgeuse", "VY Canis Majoris", "Stephenson 2-18"],
+    answer: 3
+},
+{
+    question: "Which spacecraft captured the image called the 'Pale Blue Dot'?",
+    options: ["Voyager 1", "Hubble", "Cassini", "Voyager 2"],
+    answer: 0
+}
+
+
+];
+
+function loadQuiz()
+{
+    showQuestion();
+}
+
+function showQuestion()
+{
+    const quizBox = document.getElementById("quizBox");
+    const q = quizQuestions[currentQuestion];
+
+    quizBox.innerHTML = `
+        <h2>Question ${currentQuestion + 1} of ${quizQuestions.length}</h2>
+        <p>${q.question}</p>
+        ${q.options.map((option, index) =>
+            `<div class="option" onclick="selectAnswer(${index})">${option}</div>`
+        ).join("")}
+    `;
+}
+
+function selectAnswer(selectedIndex)
+{
+    const options = document.querySelectorAll(".option");
+    const correctIndex = quizQuestions[currentQuestion].answer;
+
+    options.forEach((opt, index) =>
+    {
+        if(index === correctIndex)
+            opt.classList.add("correct");
+        else if(index === selectedIndex)
+            opt.classList.add("wrong");
+
+        opt.style.pointerEvents = "none";
+    });
+
+    if(selectedIndex === correctIndex)
+        score++;
+
+    setTimeout(nextQuestion, 1200);
+}
+
+function nextQuestion()
+{
+    currentQuestion++;
+
+    if(currentQuestion < quizQuestions.length)
+    {
+        showQuestion();
+    }
+    else
+    {
+        showResult();
+    }
+}
+
+function showResult()
+{
+    const quizBox = document.getElementById("quizBox");
+
+    quizBox.innerHTML = `
+        <h2>Quiz Completed!</h2>
+        <p>Your Score: ${score} / ${quizQuestions.length}</p>
+        <button class="quiz-btn" onclick="restartQuiz()">Restart Quiz</button>
+    `;
+}
+
+function restartQuiz()
+{
+    currentQuestion = 0;
+    score = 0;
+    showQuestion();
+}
+
