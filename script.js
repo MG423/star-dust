@@ -614,7 +614,7 @@ function loadExoplanetContent()
                 </p>
             </div>
             <div class="exo-image">
-                <img src="images/kepler.jpg" alt="Exoplanet">
+                <img src="kepler.jpg" alt="Exoplanet">
                 <p class="image-caption">This is Kepler 452B, which is a super-Earth exoplanet in the habitable zone of its star system.</p>
             </div>
         </section>
@@ -634,7 +634,7 @@ function loadExoplanetContent()
                 </p>
             </div>
             <div class="exo-image">
-                <img src="images/habitable.jpg" alt="Habitable Zone">
+                <img src="habitable.jpg" alt="Habitable Zone">
                 <p class="image-caption">The habitable zone is the region around a star where conditions may allow liquid water to exist. This is the Goldilocks zone.</p>
             </div>
         </section>
@@ -654,7 +654,7 @@ function loadExoplanetContent()
                 </p>
             </div>
             <div class="exo-image">
-                <img src="images/types.jpg" alt="Types of Exoplanets">
+                <img src="types.jpg" alt="Types of Exoplanets">
                 <p class="image-caption">Exoplanets can be rocky, gaseous, or a mix of both, with diverse characteristics.</p>
             </div>
         </section>
@@ -674,7 +674,7 @@ function loadExoplanetContent()
                 </p>
             </div>
             <div class="exo-image">
-                <img src="images/atmosphere.jpeg" alt="Exoplanet Atmosphere">
+                <img src="atmosphere.jpeg" alt="Exoplanet Atmosphere">
                 <p class="image-caption">Exoplanet atmospheres can reveal clues about their potential for supporting life.</p>
             </div>
         </section>
@@ -693,10 +693,11 @@ function loadExoplanetContent()
                 </p>
             </div>
             <div class="exo-image">
-                <img src="images/telescope.webp" alt="Space Telescope">
+                <img src="telescope.webp" alt="Space Telescope">
                 <p class="image-caption">The James Webb Space Telescope is one of the most advanced tools for studying exoplanets.</p>
             </div>
         </section>
 
     `;
+
 }
