@@ -4,7 +4,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
     color: white;
 
-    background-image: url("./space2.jpg");
+    background-image: url("./images/space2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -90,7 +90,7 @@ h1:hover{
 
 .content-page {
     margin-left: 0px;
-    background-image:url("./ss1.webp");
+    background-image:url("./images/ss1.webp");
     background-size: contain;
     background-position: top center;
     background-repeat: repeat-y;
@@ -212,7 +212,7 @@ h1:hover{
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-image: url("n3.jpg");
+    background-image: url("./images/n3.jpg");
     background-position: top center;
     background-repeat: repeat-y;
     background-size: contain;
@@ -242,6 +242,78 @@ h1:hover{
 {
     transform: scale(1.005);
     color: black;
-
 }
 
+.exo-header
+{
+    background: black;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.exo-header h8
+{
+    margin: 0;
+    font-size: 34px;
+}
+
+#exoContainer
+{
+    background: linear-gradient(to bottom, #020111, #000000);
+    padding: 50px 0;
+}
+
+.exo-section
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+    color: white;
+    min-height: 350px;
+}
+
+.exo-section:nth-child(even)
+{
+    flex-direction: row-reverse;
+    background: rgba(255,255,255,0.03);
+}
+
+.exo-text
+{
+    width: 50%;
+}
+
+.exo-text h2
+{
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #4fc3ff;
+}
+
+.exo-text p
+{
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.exo-image
+{
+    width: 40%;
+    text-align: center;
+}
+
+.exo-image img
+{
+    width: 100%;
+    max-width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(79,195,255,0.4);
+    transition: 0.3s;
+}
+
+.exo-image img:hover
+{
+    transform: scale(1.05);
+}

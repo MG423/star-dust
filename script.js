@@ -581,3 +581,122 @@ function goHome()
 {
     window.location.href = "index.html";
 }
+
+function openExoplanets()
+{
+    window.location.href = "exo.html";
+}
+
+function goHome()
+{
+    window.location.href = "index.html";
+}
+
+function loadExoplanetContent()
+{
+    const container = document.getElementById("exoContainer");
+
+    container.innerHTML = `
+
+        <section class="exo-section">
+            <div class="exo-text">
+                <h2>What Are Exoplanets?</h2>
+                <p>
+                    Exoplanets are planets that orbit stars beyond our Solar System.
+                    The first confirmed discovery was made in 1992. Since then,
+                    thousands have been detected using methods like the transit method
+                    and radial velocity technique.
+                </p>
+                <p>
+                    Some exoplanets orbit single stars like our Sun, while others
+                    orbit binary star systems. Each discovery helps scientists
+                    understand how planetary systems form and evolve.
+                </p>
+            </div>
+            <div class="exo-image">
+                <img src="images/kepler.jpg" alt="Exoplanet">
+                <p class="image-caption">This is Kepler 452B, which is a super-Earth exoplanet in the habitable zone of its star system.</p>
+            </div>
+        </section>
+
+        <section class="exo-section">
+            <div class="exo-text">
+                <h2>Habitable Zone</h2>
+                <p>
+                    The habitable zone, often called the "Goldilocks Zone,"
+                    is the region around a star where conditions may allow
+                    liquid water to exist on a planet’s surface.
+                </p>
+                <p>
+                    If a planet is too close to its star, water may evaporate.
+                    If it is too far away, water may freeze. The size of this
+                    zone depends on the star’s temperature and brightness.
+                </p>
+            </div>
+            <div class="exo-image">
+                <img src="images/habitable.jpg" alt="Habitable Zone">
+                <p class="image-caption">The habitable zone is the region around a star where conditions may allow liquid water to exist. This is the Goldilocks zone.</p>
+            </div>
+        </section>
+
+        <section class="exo-section">
+            <div class="exo-text">
+                <h2>Types of Exoplanets</h2>
+                <p>
+                    Exoplanets come in many types. Rocky planets similar to Earth
+                    are called terrestrial planets. Gas giants are similar to Jupiter
+                    and Saturn.
+                </p>
+                <p>
+                    Scientists have also discovered "Super-Earths," which are larger
+                    than Earth but smaller than Neptune, and "Hot Jupiters,"
+                    which orbit extremely close to their stars.
+                </p>
+            </div>
+            <div class="exo-image">
+                <img src="images/types.jpg" alt="Types of Exoplanets">
+                <p class="image-caption">Exoplanets can be rocky, gaseous, or a mix of both, with diverse characteristics.</p>
+            </div>
+        </section>
+
+        <section class="exo-section">
+            <div class="exo-text">
+                <h2>Atmospheres and Biosignatures</h2>
+                <p>
+                    By analyzing light from distant stars, scientists can study
+                    exoplanet atmospheres. Certain gases like oxygen, methane,
+                    and carbon dioxide may indicate biological or geological activity. 
+                </p>
+                <p>
+                    These potential signs of life are called biosignatures.
+                    However, detecting true life requires careful analysis
+                    and multiple confirmations. 
+                </p>
+            </div>
+            <div class="exo-image">
+                <img src="images/atmosphere.jpeg" alt="Exoplanet Atmosphere">
+                <p class="image-caption">Exoplanet atmospheres can reveal clues about their potential for supporting life.</p>
+            </div>
+        </section>
+
+        <section class="exo-section">
+            <div class="exo-text">
+                <h2>Future Exploration</h2>
+                <p>
+                    New space telescopes and observatories are being designed
+                    to directly image Earth-like exoplanets. These missions aim
+                    to study planetary atmospheres in greater detail. 
+                </p>
+                <p>
+                    Future research may help answer one of humanity’s biggest
+                    questions: Are we alone in the universe? Both the answers to this question are exciting and profound, and the search for exoplanets is a key part of that quest.
+                </p>
+            </div>
+            <div class="exo-image">
+                <img src="images/telescope.webp" alt="Space Telescope">
+                <p class="image-caption">The James Webb Space Telescope is one of the most advanced tools for studying exoplanets.</p>
+            </div>
+        </section>
+
+    `;
+}
