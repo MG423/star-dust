@@ -1,0 +1,1 @@
+This project is in its initial state. It provides valuable and necessary information about the ever mysterious cosmic space. All the space nerds will love this. We also plan to extend this project to a very bigger scope. Will appreciate your cooperation and help
