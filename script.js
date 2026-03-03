@@ -1248,8 +1248,8 @@ const quizQuestions = [
 },
 {
     question: "What is the name of the largest known black hole in the observable universe?",
-    options: ["IC 1101", "Sagittarius A*", "Cygnus X-1", "Messier 87"],
-    answer: 0
+    options: ["IC 1101", "Sagittarius A*", "Alcyoneus", "Messier 87"],
+    answer: 2
 },
 {
     question: "A planetary nebula is formed when:",
@@ -1361,4 +1361,5 @@ function restartQuiz()
     score = 0;
     showQuestion();
 }
+
 
