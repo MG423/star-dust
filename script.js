@@ -568,6 +568,333 @@ function showPlanetInfo(planet)
     </p>
     `;
 
+    else if (planet === "Dwarf Planets")
+        info = ` 
+    <h2>Dwarf Planets – Facts and Features</h2>
+
+    <h4>1. What Are Dwarf Planets?</h4>
+    <p>
+    Dwarf planets are celestial bodies that orbit the Sun and are spherical in shape,
+    but they have not cleared their orbital neighborhood of other debris.
+    They are smaller than the eight major planets.
+    </p>
+
+    <h4>2. Recognized Dwarf Planets</h4>
+    <p>
+    The five officially recognized dwarf planets are:
+    Pluto, Eris, Haumea, Makemake, and Ceres.
+    </p>
+
+    <h4>3. Location</h4>
+    <p>
+    Most dwarf planets are located in the Kuiper Belt beyond Neptune.
+    Ceres is the only dwarf planet located in the Asteroid Belt
+    between Mars and Jupiter.
+    </p>
+
+    <h4>4. Pluto</h4>
+    <p>
+    Pluto was classified as a dwarf planet in 2006.
+    It has five known moons, including Charon.
+    Pluto takes about 248 Earth years to orbit the Sun.
+    </p>
+
+    <h4>5. Eris</h4>
+    <p>
+    Eris is slightly smaller than Pluto but more massive.
+    It is one of the most distant known dwarf planets.
+    </p>
+
+    <h4>6. Haumea</h4>
+    <p>
+    Haumea has an unusual elongated shape due to its rapid rotation.
+    It also has a ring system and two known moons.
+    </p>
+
+    <h4>7. Makemake</h4>
+    <p>
+    Makemake is located in the Kuiper Belt and has one known moon.
+    It has a very cold surface with frozen methane.
+    </p>
+
+    <h4>8. Ceres</h4>
+    <p>
+    Ceres is the largest object in the Asteroid Belt.
+    It contains water ice and may have a subsurface ocean.
+    </p>
+
+    <h4>9. Size</h4>
+    <p>
+    Dwarf planets are much smaller than regular planets.
+    Pluto’s diameter is about 2,377 kilometers,
+    while Ceres is about 940 kilometers wide.
+    </p>
+
+    <h4>10. Temperature</h4>
+    <p>
+    Most dwarf planets are extremely cold due to their great distance
+    from the Sun, especially those in the Kuiper Belt.
+    </p>
+
+    <h4>11. Special Feature</h4>
+    <p>
+    Dwarf planets help scientists understand the early formation
+    of the Solar System and the outer regions beyond Neptune.
+    </p>
+    `;
+
+    else if(planet === "Kuiper Belt")
+{
+    info = `
+    <h2>Kuiper Belt – Facts and Features</h2>
+
+    <h4>1. What Is It?</h4>
+    <p>
+    The Kuiper Belt is a vast region of icy objects beyond Neptune.
+    It is similar to the Asteroid Belt but much larger and colder.
+    </p>
+
+    <h4>2. Location</h4>
+    <p>
+    It extends from about 30 AU to 50 AU from the Sun.
+    (1 AU = distance between Earth and Sun)
+    </p>
+
+    <h4>3. Composition</h4>
+    <p>
+    Objects here are made of frozen methane, ammonia, and water ice.
+    </p>
+
+    <h4>4. Important Objects</h4>
+    <p>
+    Pluto, Haumea, Makemake, and many comets originate here.
+    </p>
+
+    <h4>5. Importance</h4>
+    <p>
+    It contains leftover material from the early Solar System formation.
+    </p>
+    `;
+}
+
+    else if(planet === "Oort Cloud")
+{
+    info = `
+    <h2>Oort Cloud – Facts and Features</h2>
+
+    <h4>1. What Is It?</h4>
+    <p>
+    The Oort Cloud is a distant spherical shell of icy objects
+    surrounding the Solar System.
+    </p>
+
+    <h4>2. Distance</h4>
+    <p>
+    It may extend up to 100,000 AU from the Sun.
+    It is the outermost boundary of the Solar System.
+    </p>
+
+    <h4>3. Composition</h4>
+    <p>
+    Made of billions of icy bodies and long-period comets.
+    </p>
+
+    <h4>4. Discovery</h4>
+    <p>
+    Proposed by astronomer Jan Oort in 1950.
+    </p>
+
+    <h4>5. Importance</h4>
+    <p>
+    It is believed to be the source of long-period comets.
+    </p>
+    `;
+}
+
+    else if(planet === "Asteroid Belt")
+{
+    info = `
+    <h2>Asteroid Belt – Facts and Features</h2>
+
+    <h4>1. Location</h4>
+    <p>
+    Located between Mars and Jupiter.
+    </p>
+
+    <h4>2. Composition</h4>
+    <p>
+    Contains rocky and metallic objects of various sizes.
+    </p>
+
+    <h4>3. Largest Object</h4>
+    <p>
+    Ceres is the largest object in the Asteroid Belt.
+    </p>
+
+    <h4>4. Why It Exists</h4>
+    <p>
+    Jupiter’s gravity prevented these materials from forming a planet.
+    </p>
+
+    <h4>5. Importance</h4>
+    <p>
+    Helps scientists understand early planetary formation.
+    </p>
+    `;
+}
+    
+    else if(planet === "Comets")
+{
+    info = `
+    <h2>Comets – Facts and Features</h2>
+
+    <h4>1. Structure</h4>
+    <p>
+    Comets consist of a nucleus, coma, and tail.
+    </p>
+
+    <h4>2. Composition</h4>
+    <p>
+    Made of ice, dust, and rocky material.
+    </p>
+
+    <h4>3. Origin</h4>
+    <p>
+    Come from the Kuiper Belt and Oort Cloud.
+    </p>
+
+    <h4>4. Tail Formation</h4>
+    <p>
+    When near the Sun, heat causes ice to vaporize,
+    forming a glowing tail.
+    </p>
+
+    <h4>5. Famous Example</h4>
+    <p>
+    Halley’s Comet appears every 76 years.
+    </p>
+    `;
+}
+
+    else if(planet === "Asteroids")
+{
+    info = `
+    <h2>Asteroids – Facts and Features</h2>
+
+    <h4>1. What Are They?</h4>
+    <p>
+    Small rocky bodies orbiting the Sun.
+    </p>
+
+    <h4>2. Location</h4>
+    <p>
+    Most are found in the Asteroid Belt.
+    </p>
+
+    <h4>3. Types</h4>
+    <p>
+    Carbon-rich, silicate, and metallic asteroids.
+    </p>
+
+    <h4>4. Near-Earth Asteroids</h4>
+    <p>
+    Some pass close to Earth’s orbit.
+    </p>
+
+    <h4>5. Importance</h4>
+    <p>
+    Provide clues about early Solar System materials.
+    </p>
+    `;
+}
+
+    else if(planet === "Meteors")
+{
+    info = `
+    <h2>Meteoroids, Meteors & Meteorites</h2>
+
+    <h4>1. Meteoroid</h4>
+    <p>
+    A small rocky particle in space.
+    </p>
+
+    <h4>2. Meteor</h4>
+    <p>
+    When it enters Earth’s atmosphere and burns,
+    it appears as a "shooting star".
+    </p>
+
+    <h4>3. Meteorite</h4>
+    <p>
+    When part of it survives and reaches Earth’s surface.
+    </p>
+
+    <h4>4. Meteor Showers</h4>
+    <p>
+    Occur when Earth passes through comet debris.
+    </p>
+    `;
+}
+
+    else if(planet === "Moons")
+{
+    info = `
+    <h2>Natural Satellites (Moons)</h2>
+
+    <h4>1. Definition</h4>
+    <p>
+    Moons are natural objects that orbit planets.
+    </p>
+
+    <h4>2. Total Count</h4>
+    <p>
+    Over 200 known moons exist in the Solar System.
+    </p>
+
+    <h4>3. Largest Moon</h4>
+    <p>
+    Ganymede (moon of Jupiter) is the largest.
+    </p>
+
+    <h4>4. Special Cases</h4>
+    <p>
+    Titan has lakes of methane.
+    Europa may have a subsurface ocean.
+    IO is a volcanic moon.
+    </p>
+    `;
+}
+
+    else if(planet === "Rings")
+{
+    info = `
+    <h2>Planetary Rings</h2>
+
+    <h4>1. What Are Rings?</h4>
+    <p>
+    Rings are collections of ice and rock particles
+    orbiting around a planet.
+    </p>
+
+    <h4>2. Planets With Rings</h4>
+    <p>
+    Saturn, Jupiter, Uranus, and Neptune have ring systems.
+    </p>
+
+    <h4>3. Composition</h4>
+    <p>
+    Made of ice chunks and rocky debris.
+    </p>
+
+    <h4>4. Most Spectacular</h4>
+    <p>
+    Saturn has the most visible and complex ring system.
+    </p>
+    `;
+}
+
+
+
     document.getElementById("planet-info").innerHTML = info;
 }
 
