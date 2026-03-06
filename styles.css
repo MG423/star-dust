@@ -89,21 +89,12 @@ h1:hover{
     color: aliceblue;
 }
 
-.content-page {
-    margin-left: 0px;
-    padding: 40px;
-    min-height: 100vh;
-    animation: fade-in 1s ease-out; 
-}
-
-
 body.content-page-bg {
     background-image: url("ss1.webp");
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    animation: fade-in 1s ease-out;
 }
 
 @media (max-width: 768px) {
@@ -111,6 +102,15 @@ body.content-page-bg {
         background-attachment: scroll;
         background-position: center;
     }
+}
+
+.content-page {
+    padding: 40px 20px;
+    min-height: 100vh;
+    animation: fade-in 1s ease-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .logo_s {
@@ -126,35 +126,125 @@ body.content-page-bg {
     font-size: 18px;
     color: aliceblue;
     text-align: center;
+    max-width: 700px;
+}
+
+.section-heading {
+    color: #00cfff;
+    text-shadow: 0 0 8px #00cfff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.planet-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    width: 100%;
+    max-width: 860px;
+    margin-top: 10px;
 }
 
 .planet {
     animation: slide-in 0.7s ease-out;
-    background: rgba(0,0,0,0.6);
-    padding: 10px;
-    margin: 8px;
-    width: 150px;
+    background: rgba(0, 30, 80, 0.6);
+    border: 1px solid rgba(0, 207, 255, 0.35);
+    border-radius: 10px;
+    padding: 12px 10px;
     cursor: pointer;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    transition: all 0.3s ease;
     list-style: none;
 }
 
 .planet:hover {
-    background: #f20303;
+    background: rgba(255, 0, 50, 0.6);
+    border-color: #ff0033;
+    transform: scale(1.05);
+    box-shadow: 0 0 14px rgba(255, 0, 50, 0.5);
 }
 
 #planet-info {
     animation: fade-in 1s ease-out;
-    margin-top: 20px;
+    margin-top: 30px;
     text-align: center;
-    height: auto;        
-    font-size: 18px;
-    color: aliceblue;    
-    padding-bottom: 40px;
+    height: auto;
+    font-size: 17px;
+    color: aliceblue;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.55);
+    border-radius: 14px;
+    border: 1px solid rgba(0, 207, 255, 0.25);
+    max-width: 860px;
+    width: 100%;
+    line-height: 1.8;
+}
+
+#planet-info h2 {
+    color: #00cfff;
+    text-shadow: 0 0 8px #00cfff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#planet-info h4 {
+    color: #00cfff;
+    margin-top: 20px;
 }
 
 .back-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 24px;
+    background: rgba(0, 30, 80, 0.7);
+    border: 1px solid rgba(0, 207, 255, 0.4);
+    border-radius: 8px;
     color: #00cfff;
     text-decoration: none;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background: rgba(255, 0, 50, 0.6);
+    border-color: #ff0033;
+    color: #ffffff;
+    box-shadow: 0 0 12px rgba(255, 0, 50, 0.5);
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes slide-in {
+    from { transform: translateX(-30px); opacity: 0; }
+    to   { transform: translateX(0);     opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    .planet-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .logo_s {
+        font-size: 28px;
+    }
+
+    .fact_s {
+        font-size: 15px;
+    }
+
+    #planet-info {
+        padding: 20px;
+        font-size: 15px;
+    }
+
+    .content-page {
+        padding: 20px 15px;
+    }
 }
 
 
@@ -459,4 +549,5 @@ body.content-page-bg {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
 
