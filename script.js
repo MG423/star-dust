@@ -896,6 +896,8 @@ function showPlanetInfo(planet)
 
 
     document.getElementById("planet-info").innerHTML = info;
+
+    document.body.classList.add('content-page-bg');
 }
 
 
@@ -1361,5 +1363,6 @@ function restartQuiz()
     score = 0;
     showQuestion();
 }
+
 
 
