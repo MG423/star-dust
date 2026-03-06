@@ -91,13 +91,26 @@ h1:hover{
 
 .content-page {
     margin-left: 0px;
-    background-image:url("ss1.webp");
-    background-size: contain;
-    background-position: top center;
-    background-repeat: repeat-y;
     padding: 40px;
-    min-height: 400vh;
+    min-height: 100vh;
+    animation: fade-in 1s ease-out; 
+}
+
+
+body.content-page-bg {
+    background-image: url("ss1.webp");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     animation: fade-in 1s ease-out;
+}
+
+@media (max-width: 768px) {
+    body.content-page-bg {
+        background-attachment: scroll;
+        background-position: center;
+    }
 }
 
 .logo_s {
@@ -131,10 +144,12 @@ h1:hover{
 
 #planet-info {
     animation: fade-in 1s ease-out;
-    margin-top: 0px;
+    margin-top: 20px;
     text-align: center;
-    height: 100px;
+    height: auto;        
     font-size: 18px;
+    color: aliceblue;    
+    padding-bottom: 40px;
 }
 
 .back-btn {
@@ -212,19 +227,29 @@ h1:hover{
     border-radius: 10px;
 }
 
-.cosmos-container
-{
+.cosmos-container {
+    display: flex;                      
+    flex-direction: column;              
     justify-content: center;
     align-items: center;
     padding: 20px;
     background-image: url("n3.jpg");
     background-position: top center;
-    background-repeat: repeat-y;
-    background-size: contain;
+    background-repeat: no-repeat;        
+    background-size: cover;              
+    background-attachment: fixed;        
     margin-top: 0;
     min-height: 100vh;
     text-align: center;
     animation: fade-in 1s ease-out;
+}
+
+@media (max-width: 768px) {
+    .cosmos-container {
+        background-attachment: scroll;   
+        background-position: center;     
+        padding: 15px;                   
+    }
 }
 
 
