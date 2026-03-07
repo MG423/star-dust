@@ -412,7 +412,7 @@ body.content-page-bg {
 }
 
 .logo_mo:hover {
-    color: #00cfff;
+    color: #2d95b8;
 }
 
 .cosmos-grid {
@@ -438,7 +438,7 @@ body.content-page-bg {
 
 .cosmos-card {
     animation: slide-in 0.7s ease-out;
-    background: rgba(0, 10, 40, 0.65);
+    background: rgba(14, 30, 60, 0.208);
     border: 1px solid rgba(0, 207, 255, 0.25);
     border-radius: 14px;
     padding: 20px;
@@ -449,13 +449,14 @@ body.content-page-bg {
 
 .cosmos-card:hover {
     transform: scale(1.03);
+    background: #00000000;
     border-color: rgba(0, 207, 255, 0.7);
     box-shadow: 0 0 18px rgba(0, 207, 255, 0.3);
 }
 
 .cosmos-card h2 {
-    color: #00cfff;
-    text-shadow: 0 0 6px #00cfff;
+    color: #d6d6d8;
+    text-shadow: 0 0 6px #020a0c;
     margin-bottom: 10px;
 }
 
@@ -736,7 +737,7 @@ body.missions-bg {
 .site-title {
     text-align: center;
     font-size: 52px;
-    color: darkblue;
+    color: rgb(1, 1, 60);
     text-shadow: 0 0 20px #00cfff, 0 0 40px #00cfff;
     letter-spacing: 4px;
     transition: all 0.3s ease;
@@ -815,7 +816,7 @@ body.missions-bg {
 
 .era-heading {
     font-size: 32px;
-    color: darkblue;
+    color: rgb(0, 0, 70);
     text-shadow: 0 0 10px #00cfff;
     margin-bottom: 4px;
 }
@@ -824,7 +825,7 @@ body.missions-bg {
     font-size: 14px;
     font-style: italic;
     font-weight: bold;
-    color: black;
+    color: rgba(0, 0, 0, 0.93);
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 24px;
