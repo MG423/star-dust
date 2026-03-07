@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-body {
+body.home-bg {
     font-family: 'Times New Roman', Times, serif;
     color: white;
     background-image: url("sdust.jpg");

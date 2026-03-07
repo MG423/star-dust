@@ -897,7 +897,7 @@ function showPlanetInfo(planet)
 
     document.getElementById("planet-info").innerHTML = info;
 
-    document.body.classList.add('content-page-bg');
+    
 }
 
 
@@ -1366,8 +1366,6 @@ function restartQuiz()
 
 
 document.addEventListener("DOMContentLoaded", function () {
-
-    document.body.classList.add('missions-bg');
 
     const filterBtns = document.querySelectorAll(".filter-btn");
     const eraBlocks = document.querySelectorAll(".era-block");
