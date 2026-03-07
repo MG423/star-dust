@@ -725,6 +725,7 @@ body.missions-bg {
 
 .header-eyebrow {
     font-size: 13px;
+    font-weight: bolder;
     letter-spacing: 3px;
     color: darkblue;
     text-transform: uppercase;
@@ -733,15 +734,23 @@ body.missions-bg {
 }
 
 .site-title {
+    text-align: center;
     font-size: 52px;
     color: darkblue;
     text-shadow: 0 0 20px #00cfff, 0 0 40px #00cfff;
     letter-spacing: 4px;
-    margin: 0;
+    transition: all 0.3s ease;
+}
+
+.site-title :hover{
+    color: #ffffff;
+    text-shadow: 0 0 30px #00cfff;
 }
 
 .site-subtitle {
     font-size: 16px;
+    font-weight: bolder;
+    font-style: italic;
     color: black;
     margin-top: 10px;
     letter-spacing: 1px;
@@ -806,14 +815,16 @@ body.missions-bg {
 
 .era-heading {
     font-size: 32px;
-    color: #00cfff;
+    color: darkblue;
     text-shadow: 0 0 10px #00cfff;
     margin-bottom: 4px;
 }
 
 .era-label {
     font-size: 14px;
-    color: #a0c4e8;
+    font-style: italic;
+    font-weight: bold;
+    color: black;
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 24px;
