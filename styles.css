@@ -721,7 +721,7 @@ body.missions-bg {
 .header-eyebrow {
     font-size: 13px;
     letter-spacing: 3px;
-    color: #00cfff;
+    color: darkblue;
     text-transform: uppercase;
     display: block;
     margin-bottom: 10px;
@@ -976,6 +976,7 @@ body.missions-bg {
         padding: 0 12px;
     }
 }
+
 
 
 
