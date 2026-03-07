@@ -8,7 +8,7 @@
 body {
     font-family: 'Times New Roman', Times, serif;
     color: white;
-    background-image: url("space2.jpg");
+    background-image: url("sdust.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -692,6 +692,7 @@ body.content-page-bg {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
 
 
 
