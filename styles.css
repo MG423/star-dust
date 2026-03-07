@@ -695,7 +695,7 @@ body.content-page-bg {
 
 
 body.missions-bg {
-    background-image: url("voyager1.png");
+    background-image: url("rocket.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -976,6 +976,7 @@ body.missions-bg {
         padding: 0 12px;
     }
 }
+
 
 
 
