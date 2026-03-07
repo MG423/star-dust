@@ -729,7 +729,7 @@ body.missions-bg {
 
 .site-title {
     font-size: 52px;
-    color: #00cfff;
+    color: darkblue;
     text-shadow: 0 0 20px #00cfff, 0 0 40px #00cfff;
     letter-spacing: 4px;
     margin: 0;
@@ -737,7 +737,7 @@ body.missions-bg {
 
 .site-subtitle {
     font-size: 16px;
-    color: #a0c4e8;
+    color: black;
     margin-top: 10px;
     letter-spacing: 1px;
 }
@@ -976,6 +976,7 @@ body.missions-bg {
         padding: 0 12px;
     }
 }
+
 
 
 
