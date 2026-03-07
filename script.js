@@ -1365,4 +1365,35 @@ function restartQuiz()
 }
 
 
+document.addEventListener("DOMContentLoaded", function () {
+
+    document.body.classList.add('missions-bg');
+
+    const filterBtns = document.querySelectorAll(".filter-btn");
+    const eraBlocks = document.querySelectorAll(".era-block");
+
+    filterBtns.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+
+            filterBtns.forEach(b => b.classList.remove("active"));
+
+            btn.classList.add("active");
+
+            const selectedEra = btn.getAttribute("data-era");
+
+            eraBlocks.forEach(function (block) {
+                if (selectedEra === "all") {
+                    block.style.display = "block";
+                } else {
+                    if (block.getAttribute("data-era") === selectedEra) {
+                        block.style.display = "block";
+                    } else {
+                        block.style.display = "none";
+                    }
+                }
+            });
+        });
+    });
+});
+
 
