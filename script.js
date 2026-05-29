@@ -1394,4 +1394,262 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+/* ========================================= */
+/* SCROLL REVEAL */
+/* ========================================= */
 
+const revealElements = document.querySelectorAll(".reveal");
+
+function revealOnScroll() {
+
+    revealElements.forEach((element) => {
+
+        const windowHeight = window.innerHeight;
+        const revealTop = element.getBoundingClientRect().top;
+
+        if (revealTop < windowHeight - 100) {
+            element.classList.add("active");
+        }
+
+    });
+
+}
+
+window.addEventListener("scroll", revealOnScroll);
+
+revealOnScroll();
+
+/* ========================================= */
+/* FAQ ACCORDION */
+/* ========================================= */
+
+const faqQuestions = document.querySelectorAll(".faq-question");
+
+faqQuestions.forEach((question) => {
+
+    question.addEventListener("click", () => {
+
+        const answer = question.nextElementSibling;
+
+        if (answer.style.maxHeight) {
+            answer.style.maxHeight = null;
+        }
+
+        else {
+            answer.style.maxHeight = answer.scrollHeight + "px";
+        }
+
+    });
+
+});
+
+/* ========================================= */
+/* COUNTER ANIMATION */
+/* ========================================= */
+
+const counters = document.querySelectorAll("[data-target]");
+
+counters.forEach((counter) => {
+
+    const updateCounter = () => {
+
+        const target = +counter.getAttribute("data-target");
+        const current = +counter.innerText;
+
+        const increment = target / 200;
+
+        if (current < target) {
+
+            counter.innerText = `${Math.ceil(current + increment)}`;
+
+            setTimeout(updateCounter, 20);
+        }
+
+        else {
+            counter.innerText = target.toLocaleString();
+        }
+
+    };
+
+    updateCounter();
+
+});
+
+/* ========================================= */
+/* CURSOR GRAVITY EFFECT */
+/* ========================================= */
+
+const blackHole = document.querySelector(".black-hole");
+
+document.addEventListener("mousemove", (e) => {
+
+    const x = e.clientX;
+    const y = e.clientY;
+
+    const rect = blackHole.getBoundingClientRect();
+
+    const bhX = rect.left + rect.width / 2;
+    const bhY = rect.top + rect.height / 2;
+
+    const deltaX = x - bhX;
+    const deltaY = y - bhY;
+
+    const distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
+
+    if (distance < 300) {
+
+        const strength = (300 - distance) / 300;
+
+        document.body.style.transform =
+            `translate(${deltaX * strength * 0.02}px,
+            ${deltaY * strength * 0.02}px)`;
+
+    } else {
+
+        document.body.style.transform = "translate(0,0)";
+    }
+
+});
+
+/* ========================================= */
+/* HERO BUTTON INTERACTIONS */
+/* ========================================= */
+
+document.querySelector(".explore-btn")
+.addEventListener("click", () => {
+
+    document.querySelector(".facts-section")
+    .scrollIntoView({
+        behavior: "smooth"
+    });
+
+});
+
+document.querySelector(".learn-btn")
+.addEventListener("click", () => {
+
+    document.querySelector(".timeline-section")
+    .scrollIntoView({
+        behavior: "smooth"
+    });
+
+});
+
+/* ========================================= */
+/* DYNAMIC STAR GENERATOR */
+/* ========================================= */
+
+const starsContainer = document.querySelector(".stars");
+
+for (let i = 0; i < 200; i++) {
+
+    const star = document.createElement("div");
+
+    star.classList.add("star");
+
+    star.style.position = "absolute";
+    star.style.width = Math.random() * 3 + "px";
+    star.style.height = star.style.width;
+
+    star.style.background = "white";
+    star.style.borderRadius = "50%";
+
+    star.style.left = Math.random() * 100 + "%";
+    star.style.top = Math.random() * 100 + "%";
+
+    star.style.opacity = Math.random();
+
+    starsContainer.appendChild(star);
+
+}
+
+/* ========================================= */
+/* ACTIVE NAV LINK HIGHLIGHT */
+/* ========================================= */
+
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-links a");
+
+window.addEventListener("scroll", () => {
+
+    let current = "";
+
+    sections.forEach((section) => {
+
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+
+        if (pageYOffset >= sectionTop - 200) {
+            current = section.getAttribute("id");
+        }
+
+    });
+
+    navLinks.forEach((link) => {
+
+        link.classList.remove("active-link");
+
+        if (link.getAttribute("href") === `#${current}`) {
+            link.classList.add("active-link");
+        }
+
+    });
+
+});
+
+/* ========================================= */
+/* GALLERY PARALLAX EFFECT */
+/* ========================================= */
+
+const galleryCards = document.querySelectorAll(".gallery-card");
+
+galleryCards.forEach((card) => {
+
+    card.addEventListener("mousemove", (e) => {
+
+        const rect = card.getBoundingClientRect();
+
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        const moveX = (x - rect.width / 2) / 25;
+        const moveY = (y - rect.height / 2) / 25;
+
+        card.style.transform =
+            `rotateY(${moveX}deg) rotateX(${-moveY}deg)`;
+
+    });
+
+    card.addEventListener("mouseleave", () => {
+
+        card.style.transform =
+            "rotateY(0deg) rotateX(0deg)";
+
+    });
+
+});
+
+/* ========================================= */
+/* NAVBAR BACKGROUND ON SCROLL */
+/* ========================================= */
+
+const navbar = document.querySelector(".bh-navbar");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 100) {
+
+        navbar.style.background =
+            "rgba(0,0,0,0.65)";
+
+        navbar.style.backdropFilter =
+            "blur(10px)";
+
+    }
+
+    else {
+
+        navbar.style.background = "transparent";
+    }
+
+});
